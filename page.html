@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ancestry Extension</title>
+    <link rel="stylesheet" href="./screen.css">
+  </head>
+  <body style="background: #F0EEE9;">
+    <div style="display: flex; flex-direction: column;">
+      <div class="row">
+        <h3>AncestryDNA Match Data Downloader</h3>
+      </div>
+      <div class="row">
+        <!-- <button id='XXtxtDL'>Download CSV</button> -->
+        <button id='XXfilter'>Get Test IDs</button>
+	<select id="Test-select">
+    	<option value="">Select a Test ID</option>
+	</select>
+      </div>
+      <div class="row">
+        <span>Number of matches</span>
+        <span id='matchesDisplay'></span>
+      </div>
+      <div class="row">
+        <span>Match Information Scanned:</span>
+        <span id='statusDisplay'></span>
+      </div>
+      <div class="row">
+        <span>Tree Information Scanned:</span>
+        <span id='treeDisplay'></span>
+      </div>
+      <div class='row'>
+        <button id='XXscrapeButton'>Scan Matches</button>
+      </div>
+        <hr> 
+      <div class="row">
+        <span>Matches ICW Scanned</span>
+        <span id='icwDisplay'></span>
+      </div>
+      <div class='row'>
+        <button id='XXicwButton'>Scan ICW</button>
+        <button id='XXicwupButton'>Resume</button>
+        <button id='XXicwsnButton'>Update</button>
+        <!-- <button id='XXclearButton'>Clear</button> -->
+      </div>
+              <hr>
+      <div class="row">
+        <span>Export Match Data</span>
+        <button id='XXexpmButton'>Export Matches</button>
+        <!-- <button id='XXclearButton'>Clear</button> -->
+      </div>
+            <div class="row">
+        <span>Export Match Data and ICW matrix</span>
+        <button id='XXcButton'>Export</button>
+        <!-- <button id='XXclearButton'>Clear</button> -->
+      </div>
+      <div class="row">
+        <span>Create Clusters and export XML</span>
+        <button id='XXcluButton'>Cluster</button>
+      </div>
+      <div class='row'>
+        <span>Max CM: </span>
+        <input type="number" id="XXmaxcm" min="0" max = "5000" value = "400">
+        </div>
+        <div class='row'>
+        <span>Min CM: </span>
+        <input type="number" id="XXmincm" min = "0" max = "5000" value = "40">
+      </div>
+      <div class='row'>
+        <span>Min percentage of matches in common</span>
+        <input type="number" id="XXperc" min = "0" max = "100" value = "50">
+      </div>
+      <div class='row'>
+        <span>Min Cluster Size</span>
+        <input type="number" id="XXnumc" min = "2" max = "100" value = "2">
+      </div>
+      
+      
+      
+      
+      
+      <!--<div class="row">
+        <span>url</span>
+        <span id='urlDisplay'></span>
+      </div>-->
+
+
+      
+
+
+</div>
+      
+          <!-- For bootstrapping saved data to DL for later -->
+          <div style="display:none" id="xxCurrentStorage"></div>
+    </div>
+  </body>
+  <footer>
+    <script src="panel_actions.js"></script>
+  </footer>
+</html>

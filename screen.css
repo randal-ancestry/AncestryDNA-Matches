@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+  font-size: 100%;
+  min-width: 400px;
+  max-width: 400px;
+  display: flex; 
+  flex-direction: column; 
+}
+
+.row {
+  display: flex; 
+  flex-direction: row;
+  margin: 0.5em; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+#status {
+  /* avoid an excessively wide status text */
+  white-space: pre;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 400px;
+}
+
+.tableResults {
+   
+}
